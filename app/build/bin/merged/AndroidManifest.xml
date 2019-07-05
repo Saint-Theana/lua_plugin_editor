@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="saki.demo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="25.3.1" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="class"
+            android:value="saki.demo.Demo" />
+        <meta-data
+            android:name="author"
+            android:value="saki" />
+        <meta-data
+            android:name="info"
+            android:value="This is Demo" />
+        <meta-data
+            android:name="jump"
+            android:value="true" />
+
+        <activity
+            android:name="saki.demo.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="saki.demo.Test1Activity" />
+        <activity android:name="saki.demo.Test2Activity" />
+        <activity android:name="saki.demo.Test3Activity" />
+        <activity android:name="saki.demo.Test4Activity" />
+        <activity android:name="saki.demo.Test5Activity" />
+        <activity android:name="saki.demo.Test6Activity" />
+    </application>
+
+</manifest>
